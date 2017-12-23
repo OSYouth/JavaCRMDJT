@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lcsecurity.iml" filepath="$PROJECT_DIR$/lcsecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lcsecurityapp/lcsecurityapp.iml" filepath="$PROJECT_DIR$/lcsecurityapp/lcsecurityapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lcsecuritybroswer/lcsecuritybroswer.iml" filepath="$PROJECT_DIR$/lcsecuritybroswer/lcsecuritybroswer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lcsecuritycore/lcsecuritycore.iml" filepath="$PROJECT_DIR$/lcsecuritycore/lcsecuritycore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lcsecuritydemo/lcsecuritydemo.iml" filepath="$PROJECT_DIR$/lcsecuritydemo/lcsecuritydemo.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lcsecurityapp" />
+        <module name="lcsecuritybroswer" />
+        <module name="lcsecuritycore" />
+        <module name="lcsecuritydemo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lcsecurity" target="1.8" />
+      <module name="lcsecurityapp" target="1.8" />
+      <module name="lcsecuritybroswer" target="1.8" />
+      <module name="lcsecuritycore" target="1.8" />
+      <module name="lcsecuritydemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
