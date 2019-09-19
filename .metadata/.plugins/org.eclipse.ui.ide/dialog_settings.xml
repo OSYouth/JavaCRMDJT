@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\Java\workspace\10.11"/>
+		<item value="E:\Java\workspace\castle"/>
+		<item value="E:\Java\WYYKT\JJWeek06\castle"/>
+		<item value="E:\Java\WYYKT\JJWeek02"/>
+		<item value="E:\Java\WYYKT"/>
+		<item value="E:\Java\workspace"/>
+		<item value="E:\javarumen\Java从入门到精通\TM（视频讲解及实例源程序）\sl（实例源程序）"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
+</section>

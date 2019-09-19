@@ -1,0 +1,11 @@
+import java.util.*;
+public class guess {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner in = new Scanner(System.in);
+		int number ;
+
+	}
+
+}

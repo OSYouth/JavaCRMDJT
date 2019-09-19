@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int m = in.nextInt();
+		
+		int sum_n = 0;
+		int sum_m = 0;
+		
+		boolean is_prime;
+		
+		n--;
+		for(int num = 2; num < 100000; num++)
+		{
+			is_prime = true;
+			for(int i = 2; i < num; i++)
+			{
+				if((num % i) == 0)
+				{
+					is_prime = false;
+					break;
+				}
+				if(is_prime)
+				{
+					n--;
+					sum_n = sum_n + num;	
+				}
+			}
+			if(n == 0)
+			{
+				break;
+			}
+		}
+		
+//		for(int n = 2; n<200; n++)
+//		{
+//			is_prime = 1;
+//			for(int i = 2; i < n; i ++)
+//			{
+//				if( n % i == 0)
+//				{
+//					is_prime = 0;
+//					break;
+//				}
+//			}
+//			if(is_prime == 1)
+//			{
+//				System.out.print(n + " " );
+//			}
+//		}
+		
+		for(int num = 2; num < 100000; num++)
+		{
+			is_prime = true;
+			for(int i = 2; i < num; i++)
+			{
+				if((num % i) == 0)
+				{
+					is_prime = false;
+					break;
+				}
+				if(is_prime)
+				{
+					m--;
+					sum_m = sum_m + num;	
+				}
+			}
+			if(m == 0)
+			{
+				break;
+			}
+		}
+		
+		int sum_prime = sum_m - sum_n;
+		System.out.println(sum_n);
+		System.out.println(sum_m);		
+		System.out.println(sum_prime);
+		
+
+	}
+
+}

@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int m = in.nextInt();
+		
+		int sum_n = 0;
+		int sum_m = 0;
+		
+		boolean is_prime;
+		//思路：计算前(n-1)个素数的和sum_n, 以及m个素数和sum_m,然后后者减前者
+		//由于素数判断除了问题，导致卡了很久
+		n--;
+		for(int num = 2; num < 10000; num++)
+		{
+			is_prime = true;
+			for(int i = 2; i < num; i++)
+			{
+				if((num % i) == 0)
+				{
+					is_prime = false;
+					break;
+				}
+				if(is_prime)
+				{
+					n--;
+					sum_n = sum_n + num;	
+				}
+			}
+			if(n == 0)
+			{
+				break;
+			}
+		}		
+		for(int num = 2; num < 10000; num++)
+		{
+			is_prime = true;
+			for(int i = 2; i < num; i++)
+			{
+				if((num % i) == 0)
+				{
+					is_prime = false;
+					break;
+				}
+				if(is_prime)
+				{
+					m--;
+					sum_m = sum_m + num;	
+				}
+			}
+			if(m == 0)
+			{
+				break;
+			}
+		}		
+		int sum_prime = sum_m - sum_n;
+//		System.out.println(sum_n);
+//		System.out.println(sum_m);		
+		System.out.println(sum_prime);
+	}
+
+}

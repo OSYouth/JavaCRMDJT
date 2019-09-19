@@ -1,0 +1,33 @@
+package hello;
+
+import java.util.Scanner;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+////		System.out.println("Hello World中文");
+//		Scanner in = new Scanner(System.in);
+////		System.out.println("ECHO:" + in.nextLine());
+//		int amout = 100;
+//		int price = 0;
+//		System.out.print("amout:");
+//		amout = in.nextInt();
+//		System.out.print("price:");
+//		price = in.nextInt();
+//		System.out.println(amout + "-"+ price +"="+(amout-price));
+////		int currency,fireplace,_last_name,变量;
+		
+		
+		
+		
+		int foot;
+		int inch;
+		Scanner input = new Scanner(System.in);
+		foot = input.nextInt();
+		inch = input.nextInt();
+		System.out.println("foot="+foot+",inch="+inch);
+		System.out.println((foot + inch/12)*0.3048);
+		
+	}
+}

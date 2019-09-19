@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int m = in.nextInt();
+		
+		int sum_n = 0;
+		int sum_m = 0;
+		
+		n--;
+		OUT_N:
+		for(int num = 2; num < 100000; num++)
+		{
+			for(int i = 2; i < 100000; i++)
+			{
+				if((num % i) == 0)
+				{
+					sum_n = sum_n + num;
+					n--;
+				}
+				if(n == 0)
+				{
+					break OUT_N;
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+		
+		OUT_M:
+		for(int num = 2; num < 100000; num++)
+		{
+			for(int i = 2; i < 100000; i++)
+			{
+				if((num % i) == 0)
+				{
+					sum_m = sum_m + num;
+					m--;
+				}
+				if(m == 0)
+				{
+					break OUT_M;
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+		
+		int sum_prime = sum_m - sum_n;
+		System.out.println(sum_n);
+		System.out.println(sum_m);		
+		System.out.println(sum_prime);
+		
+
+	}
+
+}
